@@ -1,5 +1,5 @@
 # csv-sorter
-The application should support the following cmd options:
+The application support the following cmd options:
 | CLI option (long) | CLI option (short)   | Arguments | Default   | Required   | Description                              |
 | ------            | ------                | ------    | ------    | ------    |------------------------------------------|
 | --help            |                      |           |           | false     | Print application usage                  |
@@ -11,7 +11,7 @@ The application should support the following cmd options:
 | --charset         |                      | String    | UTF-8     | false     | Charset used by input (and output) files |
 
 ### Input Format
-The application will be able to work with any ``input`` CSV file compliant with the following conditions:
+The application can work with any ``input`` CSV file compliant with the following conditions:
 
 - First line in the file is a header (columns are named)  
 - File has a column with space-separated labels.
@@ -36,10 +36,10 @@ birds,birds | parrots | ravens
 eggs,turtles | snakes | birds
 social,society | people & animals
 ```
-The first column (``name``) is the name of the filter. This value is also used as the name of the output CSV file (e.g.,``eggs.csv``).    
-The second column (``expression``) is a logical expression.
+The first column ``name`` is the name of the filter. This value is also used as the name of the output CSV file (e.g.,``eggs.csv``).    
+The second column ``expression`` is a logical expression.
 
-### Expression Grammar
+### Logical Expression Grammar
 The following is the [EBNF grammar](https://en.wikipedia.org/wiki/Extended_Backus–Naur_form) of the supported expression language.
 
 ```text
